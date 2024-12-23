@@ -24,25 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		817396082D103BA60019D586 /* Dishcovery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dishcovery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		817396182D103BA70019D586 /* DishcoveryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishcoveryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		817396222D103BA70019D586 /* DishcoveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DishcoveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		817396082D103BA60019D586 /* HogwartsChronicles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HogwartsChronicles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		817396182D103BA70019D586 /* HogwartsChroniclesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsChroniclesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		817396222D103BA70019D586 /* HogwartsChroniclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsChroniclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8173960A2D103BA60019D586 /* Dishcovery */ = {
+		8173960A2D103BA60019D586 /* HogwartsChronicles */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Dishcovery;
-			sourceTree = "<group>";
-		};
-		8173961B2D103BA70019D586 /* DishcoveryTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DishcoveryTests;
-			sourceTree = "<group>";
-		};
-		817396252D103BA70019D586 /* DishcoveryUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = DishcoveryUITests;
+			path = HogwartsChronicles;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +65,7 @@
 		817395FF2D103BA60019D586 = {
 			isa = PBXGroup;
 			children = (
-				8173960A2D103BA60019D586 /* Dishcovery */,
-				8173961B2D103BA70019D586 /* DishcoveryTests */,
-				817396252D103BA70019D586 /* DishcoveryUITests */,
+				8173960A2D103BA60019D586 /* HogwartsChronicles */,
 				817396092D103BA60019D586 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +73,9 @@
 		817396092D103BA60019D586 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				817396082D103BA60019D586 /* Dishcovery.app */,
-				817396182D103BA70019D586 /* DishcoveryTests.xctest */,
-				817396222D103BA70019D586 /* DishcoveryUITests.xctest */,
+				817396082D103BA60019D586 /* HogwartsChronicles.app */,
+				817396182D103BA70019D586 /* HogwartsChroniclesTests.xctest */,
+				817396222D103BA70019D586 /* HogwartsChroniclesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +83,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		817396072D103BA60019D586 /* Dishcovery */ = {
+		817396072D103BA60019D586 /* HogwartsChronicles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8173962C2D103BA70019D586 /* Build configuration list for PBXNativeTarget "Dishcovery" */;
+			buildConfigurationList = 8173962C2D103BA70019D586 /* Build configuration list for PBXNativeTarget "HogwartsChronicles" */;
 			buildPhases = (
 				817396042D103BA60019D586 /* Sources */,
 				817396052D103BA60019D586 /* Frameworks */,
@@ -108,18 +96,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8173960A2D103BA60019D586 /* Dishcovery */,
+				8173960A2D103BA60019D586 /* HogwartsChronicles */,
 			);
-			name = Dishcovery;
+			name = HogwartsChronicles;
 			packageProductDependencies = (
 			);
 			productName = Dishcovery;
-			productReference = 817396082D103BA60019D586 /* Dishcovery.app */;
+			productReference = 817396082D103BA60019D586 /* HogwartsChronicles.app */;
 			productType = "com.apple.product-type.application";
 		};
-		817396172D103BA70019D586 /* DishcoveryTests */ = {
+		817396172D103BA70019D586 /* HogwartsChroniclesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8173962F2D103BA70019D586 /* Build configuration list for PBXNativeTarget "DishcoveryTests" */;
+			buildConfigurationList = 8173962F2D103BA70019D586 /* Build configuration list for PBXNativeTarget "HogwartsChroniclesTests" */;
 			buildPhases = (
 				817396142D103BA70019D586 /* Sources */,
 				817396152D103BA70019D586 /* Frameworks */,
@@ -130,19 +118,16 @@
 			dependencies = (
 				8173961A2D103BA70019D586 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				8173961B2D103BA70019D586 /* DishcoveryTests */,
-			);
-			name = DishcoveryTests;
+			name = HogwartsChroniclesTests;
 			packageProductDependencies = (
 			);
 			productName = DishcoveryTests;
-			productReference = 817396182D103BA70019D586 /* DishcoveryTests.xctest */;
+			productReference = 817396182D103BA70019D586 /* HogwartsChroniclesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		817396212D103BA70019D586 /* DishcoveryUITests */ = {
+		817396212D103BA70019D586 /* HogwartsChroniclesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 817396322D103BA70019D586 /* Build configuration list for PBXNativeTarget "DishcoveryUITests" */;
+			buildConfigurationList = 817396322D103BA70019D586 /* Build configuration list for PBXNativeTarget "HogwartsChroniclesUITests" */;
 			buildPhases = (
 				8173961E2D103BA70019D586 /* Sources */,
 				8173961F2D103BA70019D586 /* Frameworks */,
@@ -153,14 +138,11 @@
 			dependencies = (
 				817396242D103BA70019D586 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				817396252D103BA70019D586 /* DishcoveryUITests */,
-			);
-			name = DishcoveryUITests;
+			name = HogwartsChroniclesUITests;
 			packageProductDependencies = (
 			);
 			productName = DishcoveryUITests;
-			productReference = 817396222D103BA70019D586 /* DishcoveryUITests.xctest */;
+			productReference = 817396222D103BA70019D586 /* HogwartsChroniclesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -175,6 +157,7 @@
 				TargetAttributes = {
 					817396072D103BA60019D586 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 					817396172D103BA70019D586 = {
 						CreatedOnToolsVersion = 16.2;
@@ -186,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 817396032D103BA60019D586 /* Build configuration list for PBXProject "Dishcovery" */;
+			buildConfigurationList = 817396032D103BA60019D586 /* Build configuration list for PBXProject "HogwartsChronicles" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +183,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				817396072D103BA60019D586 /* Dishcovery */,
-				817396172D103BA70019D586 /* DishcoveryTests */,
-				817396212D103BA70019D586 /* DishcoveryUITests */,
+				817396072D103BA60019D586 /* HogwartsChronicles */,
+				817396172D103BA70019D586 /* HogwartsChroniclesTests */,
+				817396212D103BA70019D586 /* HogwartsChroniclesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +241,12 @@
 /* Begin PBXTargetDependency section */
 		8173961A2D103BA70019D586 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 817396072D103BA60019D586 /* Dishcovery */;
+			target = 817396072D103BA60019D586 /* HogwartsChronicles */;
 			targetProxy = 817396192D103BA70019D586 /* PBXContainerItemProxy */;
 		};
 		817396242D103BA70019D586 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 817396072D103BA60019D586 /* Dishcovery */;
+			target = 817396072D103BA60019D586 /* HogwartsChronicles */;
 			targetProxy = 817396232D103BA70019D586 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,9 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dishcovery/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HogwartsChronicles/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -408,9 +392,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hogent.Dishcovery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hogent.HogwartsChronicles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,9 +406,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dishcovery/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HogwartsChronicles/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -436,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hogent.Dishcovery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hogent.HogwartsChronicles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -458,7 +444,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dishcovery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dishcovery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HogwartsChronicles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HogwartsChronicles";
 			};
 			name = Debug;
 		};
@@ -476,7 +462,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dishcovery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dishcovery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HogwartsChronicles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HogwartsChronicles";
 			};
 			name = Release;
 		};
@@ -515,7 +501,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		817396032D103BA60019D586 /* Build configuration list for PBXProject "Dishcovery" */ = {
+		817396032D103BA60019D586 /* Build configuration list for PBXProject "HogwartsChronicles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8173962A2D103BA70019D586 /* Debug */,
@@ -524,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8173962C2D103BA70019D586 /* Build configuration list for PBXNativeTarget "Dishcovery" */ = {
+		8173962C2D103BA70019D586 /* Build configuration list for PBXNativeTarget "HogwartsChronicles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8173962D2D103BA70019D586 /* Debug */,
@@ -533,7 +519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8173962F2D103BA70019D586 /* Build configuration list for PBXNativeTarget "DishcoveryTests" */ = {
+		8173962F2D103BA70019D586 /* Build configuration list for PBXNativeTarget "HogwartsChroniclesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				817396302D103BA70019D586 /* Debug */,
@@ -542,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		817396322D103BA70019D586 /* Build configuration list for PBXNativeTarget "DishcoveryUITests" */ = {
+		817396322D103BA70019D586 /* Build configuration list for PBXNativeTarget "HogwartsChroniclesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				817396332D103BA70019D586 /* Debug */,

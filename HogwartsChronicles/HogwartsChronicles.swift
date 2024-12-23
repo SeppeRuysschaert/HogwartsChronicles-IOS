@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct DishcoveryApp: App {
+struct HogwartsChroniclesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharacterListView(characterViewModel: CharacterViewModel())
         }
     }
 }
