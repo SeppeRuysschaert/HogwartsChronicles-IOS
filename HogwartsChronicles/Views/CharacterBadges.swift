@@ -59,3 +59,17 @@ struct AliveBadge: View {
             .foregroundColor(.white)
     }
 }
+
+struct StudentBadge: View {
+    var body: some View {
+        Text("Student 🎓")
+            .font(.subheadline)
+            .bold()
+            .padding(.vertical, 4)
+            .padding(.horizontal, 8)
+            .background(Color.blue.opacity(0.7))
+            .cornerRadius(8)
+            .foregroundColor(.white)
+    }
+}
+

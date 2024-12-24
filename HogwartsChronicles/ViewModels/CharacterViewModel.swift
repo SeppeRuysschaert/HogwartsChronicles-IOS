@@ -8,18 +8,19 @@
 import SwiftUI
 
 class CharacterViewModel: ObservableObject {
-    typealias Character = CharacterModel.Character
+    typealias Character = CharacterM.Global
     
     @Published private var _characters: [Character]?
     @Published var showOnlyWizards = false
     @Published var filterStatus: FilterStatus = .all
-    private let apiService = ApiService()
+    @Published var showOnlyStudents: Bool = false
+    private let apiService = ApiService<[Character]>("https://hp-api.onrender.com/api/characters")
     
     @MainActor
     func fetchCharacters() {
         Task {
             do {
-                _characters = try await apiService.fetchCharacters()
+                _characters = try await apiService.fetch()
             } catch ApiError.invalidURL {
                 print("invalid URL")
             } catch ApiError.invalidResponse {
@@ -35,6 +36,11 @@ class CharacterViewModel: ObservableObject {
             if showOnlyWizards {
                 characters = characters.filter({ c in
                     c.wizard == true
+                })
+            }
+            if showOnlyStudents {
+                characters = characters.filter({ c in
+                    c.hogwartsStudent == true
                 })
             }
             if filterStatus == .alive {

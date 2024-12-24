@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct CharacterModel: Decodable {
-    struct Character : Decodable, Identifiable{
+struct CharacterM: Decodable {
+    struct Global : Decodable, Identifiable{
         let id: String
         let name: String
-        let gender: String
+        let hogwartsStudent: Bool
         let house: String
         let actor: String
         let wizard: Bool

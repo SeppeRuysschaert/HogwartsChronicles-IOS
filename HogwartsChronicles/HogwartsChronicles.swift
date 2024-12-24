@@ -11,7 +11,7 @@ import SwiftUI
 struct HogwartsChroniclesApp: App {
     var body: some Scene {
         WindowGroup {
-            CharacterListView(characterViewModel: CharacterViewModel())
+            MainTabView()
         }
     }
 }

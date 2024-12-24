@@ -23,6 +23,7 @@ struct CharacterListView: View {
     func filterOptions() -> some View {
         VStack {
             wizardToggle()
+            studentToggle()
             lifePicker()
         }
     }
@@ -32,6 +33,29 @@ struct CharacterListView: View {
             CharacterView(character: character)
         }
     }
+    
+    func studentToggle() -> some View {
+            HStack {
+                Image(systemName: characterViewModel.showOnlyStudents ? "graduationcap" : "graduationcap.fill")
+                    .resizable()
+                    .frame(width: 24, height: 24)
+                    .foregroundColor(characterViewModel.showOnlyStudents ? .blue : .gray)
+                
+                Toggle(isOn: $characterViewModel.showOnlyStudents) {
+                    Text("Only Students")
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                }
+                .toggleStyle(SwitchToggleStyle(tint: .blue))
+            }
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color(UIColor.systemGray6))
+                    .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
+            )
+            .padding(.horizontal)
+        }
     
     func wizardToggle() -> some View {
         HStack {
@@ -63,7 +87,7 @@ struct CharacterListView: View {
             Text("Dead").tag(CharacterViewModel.FilterStatus.dead)
         }
         .pickerStyle(SegmentedPickerStyle())
-        .padding()
+        .padding(.horizontal)
     }
     
 }

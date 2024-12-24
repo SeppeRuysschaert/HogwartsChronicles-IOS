@@ -7,13 +7,15 @@
 
 import Foundation
 
-class ApiService {
-    private let baseURL = "https://hp-api.onrender.com/api"
+class ApiService<T: Decodable> {
+    private let Url: String
     
-    typealias Character = CharacterModel.Character
+    init(_ Url: String) {
+        self.Url = Url
+    }
     
-    func fetchCharacters() async throws -> [Character] {
-        guard let url = URL(string: "\(baseURL)/characters") else {
+    func fetch() async throws -> T {
+        guard let url = URL(string: Url) else {
             throw ApiError.invalidURL
         }
         
@@ -25,12 +27,11 @@ class ApiService {
         }
         
         do {
-            return try JSONDecoder().decode([Character].self, from: data)
+            return try JSONDecoder().decode(T.self, from: data)
         } catch {
             throw ApiError.decodingError
         }
     }
-    
 }
 
 enum ApiError: Error {

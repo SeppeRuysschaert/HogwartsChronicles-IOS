@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharacterView: View {
-    let character: CharacterModel.Character
+    let character: CharacterM.Global
     var body: some View {
         HStack {
             characterImage(
@@ -21,21 +21,31 @@ struct CharacterView: View {
                     .font(.headline)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                HStack {
-                    if !character.house.isEmpty {
-                        HouseBadge(house: character.house)
-                    }
-                    if character.wizard {
-                        WizardBadge()
-                    }
-                }.frame(maxWidth: .infinity, alignment: .leading)
-                
-                AliveBadge(isAlive: character.alive)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                badges()
             }
             .padding(.leading, 10)
         }
         .padding(.vertical, 8)
+    }
+    
+    func badges() -> some View {
+        VStack {
+            HStack {
+                if !character.house.isEmpty {
+                    HouseBadge(house: character.house)
+                }
+                if character.wizard {
+                    WizardBadge()
+                }
+            }.frame(maxWidth: .infinity, alignment: .leading)
+            
+            HStack {
+                AliveBadge(isAlive: character.alive)
+                if character.hogwartsStudent {
+                    StudentBadge()
+                }
+            }.frame(maxWidth: .infinity, alignment: .leading)
+        }
     }
     
     func characterImage(image: String, name: String) -> some View {
