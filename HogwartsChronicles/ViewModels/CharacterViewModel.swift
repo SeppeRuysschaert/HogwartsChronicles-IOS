@@ -11,6 +11,8 @@ class CharacterViewModel: ObservableObject {
     typealias Character = CharacterModel.Character
     
     @Published private var _characters: [Character]?
+    @Published var showOnlyWizards = false
+    @Published var filterStatus: FilterStatus = .all
     private let apiService = ApiService()
     
     @MainActor
@@ -29,9 +31,30 @@ class CharacterViewModel: ObservableObject {
     }
     
     var characters: Array<Character> {
-        if let characters = _characters {
+        if var characters = _characters {
+            if showOnlyWizards {
+                characters = characters.filter({ c in
+                    c.wizard == true
+                })
+            }
+            if filterStatus == .alive {
+                characters = characters.filter({ c in
+                    c.alive == true
+                })
+            }
+            if filterStatus == .dead {
+                characters = characters.filter({ c in
+                    c.alive == false
+                })
+            }
             return characters
         }
         return []
+    }
+    
+    enum FilterStatus {
+        case all
+        case alive
+        case dead
     }
 }
