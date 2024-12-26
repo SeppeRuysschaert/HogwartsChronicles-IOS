@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct CharacterM: Decodable {
-    struct Global : Decodable, Identifiable{
+struct Character: Codable, Identifiable {
         let id: String
         let name: String
         let hogwartsStudent: Bool
@@ -17,5 +16,4 @@ struct CharacterM: Decodable {
         let wizard: Bool
         let alive: Bool
         let image: String
-    }
 }

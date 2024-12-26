@@ -16,7 +16,7 @@ struct SpellsView: View {
             spellsList().onAppear {
                 spellViewModel.fetchSpells()
             }
-        }
+        }.padding(.vertical)
     }
     
     func spellsList() -> some View {

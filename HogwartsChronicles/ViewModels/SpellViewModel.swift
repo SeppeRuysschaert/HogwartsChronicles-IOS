@@ -10,13 +10,13 @@ import SwiftUI
 class SpellViewModel : ObservableObject {
     @Published private var _spells: [Spell]?
     @Published var searchText: String = ""
-    private let apiService = ApiService<[Spell]>("https://hp-api.onrender.com/api/spells")
+    private let apiService = ApiService<[Spell]>()
     
     @MainActor
     func fetchSpells() {
         Task {
             do {
-                _spells = try await apiService.fetch()
+                _spells = try await apiService.fetch(by: "https://hp-api.onrender.com/api/spells")
             } catch ApiError.invalidURL {
                 print("invalid URL")
             } catch ApiError.invalidResponse {

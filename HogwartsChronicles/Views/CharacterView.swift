@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharacterView: View {
-    let character: CharacterM.Global
+    let character: Character
     var body: some View {
         HStack {
             characterImage(

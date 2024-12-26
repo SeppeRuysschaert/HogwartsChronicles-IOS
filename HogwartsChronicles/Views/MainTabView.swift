@@ -20,7 +20,7 @@ struct MainTabView: View {
                     Label("Spells", systemImage: "wand.and.stars")
                 }
             
-            StudentListView()
+            HousesView(housesViewModel: HousesViewModel())
                 .tabItem {
                     Label("Houses", systemImage: "house.fill")
                 }

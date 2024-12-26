@@ -8,19 +8,26 @@
 import SwiftUI
 
 class CharacterViewModel: ObservableObject {
-    typealias Character = CharacterM.Global
-    
+
     @Published private var _characters: [Character]?
+    @Published private var savedCharacters: Set<String> = []
     @Published var showOnlyWizards = false
     @Published var filterStatus: FilterStatus = .all
     @Published var showOnlyStudents: Bool = false
-    private let apiService = ApiService<[Character]>("https://hp-api.onrender.com/api/characters")
+    @Published var showingFavs = false
+    
+    private let apiService = ApiService<[Character]>()
+    private var db = Database()
+    
+    init() {
+        self.savedCharacters = db.load()
+    }
     
     @MainActor
     func fetchCharacters() {
         Task {
             do {
-                _characters = try await apiService.fetch()
+                _characters = try await apiService.fetch(by: "https://hp-api.onrender.com/api/characters")
             } catch ApiError.invalidURL {
                 print("invalid URL")
             } catch ApiError.invalidResponse {
@@ -29,6 +36,25 @@ class CharacterViewModel: ObservableObject {
                 print("decoding error")
             }
         }
+    }
+    
+    func sortFavs() {
+        withAnimation() {
+            showingFavs.toggle()
+        }
+    }
+    
+    func contains(_ character: Character) -> Bool {
+        savedCharacters.contains(character.id)
+    }
+    
+    func toggleFav(character: Character) {
+        if contains(character) {
+            savedCharacters.remove(character.id)
+        } else {
+            savedCharacters.insert(character.id)
+        }
+        db.save(characters: savedCharacters)
     }
     
     var characters: Array<Character> {
@@ -52,6 +78,9 @@ class CharacterViewModel: ObservableObject {
                 characters = characters.filter({ c in
                     c.alive == false
                 })
+            }
+            if showingFavs {
+                characters = characters.filter { savedCharacters.contains($0.id) }
             }
             return characters
         }

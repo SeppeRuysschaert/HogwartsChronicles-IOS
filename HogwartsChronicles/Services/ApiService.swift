@@ -8,14 +8,9 @@
 import Foundation
 
 class ApiService<T: Decodable> {
-    private let Url: String
-    
-    init(_ Url: String) {
-        self.Url = Url
-    }
-    
-    func fetch() async throws -> T {
-        guard let url = URL(string: Url) else {
+
+    func fetch(by url: String) async throws -> T {
+        guard let url = URL(string: url) else {
             throw ApiError.invalidURL
         }
         

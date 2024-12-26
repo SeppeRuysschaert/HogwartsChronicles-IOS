@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "im-planning-on-drawing-the-ravenclaw-crest-which-one-should-v0-8plt7so7b4wd1.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

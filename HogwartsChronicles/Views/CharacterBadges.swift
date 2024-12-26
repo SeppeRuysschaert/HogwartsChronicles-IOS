@@ -38,7 +38,7 @@ struct WizardBadge: View {
             .font(.subheadline)
             .bold()
             .padding(.vertical, 4)
-            .padding(.horizontal, 8)
+            .padding(.horizontal, 7)
             .background(Color.purple.opacity(0.7))
             .cornerRadius(8)
             .foregroundColor(.white)
