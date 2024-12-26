@@ -29,23 +29,9 @@
 		817396222D103BA70019D586 /* HogwartsChroniclesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HogwartsChroniclesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		817396932D1DA5830019D586 /* Exceptions for "HogwartsChronicles" folder in "HogwartsChronicles" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Assets.xcassets,
-				"Preview Content/Preview Assets.xcassets",
-			);
-			target = 817396072D103BA60019D586 /* HogwartsChronicles */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8173960A2D103BA60019D586 /* HogwartsChronicles */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				817396932D1DA5830019D586 /* Exceptions for "HogwartsChronicles" folder in "HogwartsChronicles" target */,
-			);
 			path = HogwartsChronicles;
 			sourceTree = "<group>";
 		};
